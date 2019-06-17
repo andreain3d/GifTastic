@@ -1,6 +1,7 @@
 var topics = ["cat", "eagle", "penguin", "quokka", "raccoon"];
 
 var renderButtons = function() {
+  $("#button-container").empty();
   for (i = 0; i < topics.length; i++) {
     var newButton = $("<button>");
     newButton.text(topics[i]);
@@ -11,8 +12,16 @@ var renderButtons = function() {
 };
 
 renderButtons();
+
 $(document).ready(function() {
-  $(".animal-button").on("click", function() {
+  $("#add-animal").on("click", function(e) {
+    // YOUR CODE GOES HERE
+    e.preventDefault();
+    topics.push($("#input-animal").val());
+    console.log(topics);
+    renderButtons();
+  });
+  $(document).on("click", ".animal-button", function() {
     $("#gifs-appear-here").empty();
     var animal = $(this).attr("data-animal");
     var queryURL =
