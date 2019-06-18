@@ -1,5 +1,7 @@
 #button-container {
-  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .animal-button {
@@ -10,7 +12,7 @@
 #gifs-appear-here {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .result-items {
