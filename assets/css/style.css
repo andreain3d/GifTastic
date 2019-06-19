@@ -1,12 +1,32 @@
+body {
+  background: url("../images/bg.jpg");
+}
+
+.main-content {
+  background: #fff;
+  border-radius: 20px;
+  border: solid 1px Gray;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+  min-height: 600px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
 #button-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  padding-bottom: 20px;
 }
 
 .animal-button {
   margin: 10px;
   padding: 10px 20px 10px;
+}
+
+.card-title {
+  font-family: "Anton", Helvetica, sans-serif;
+  font-size: 3rem;
 }
 
 #gifs-appear-here {

@@ -1,11 +1,17 @@
-var topics = ["cat", "eagle", "penguin", "quokka", "raccoon"];
+var topics = [
+  "spiderman",
+  "batman",
+  "superman",
+  "wonder woman",
+  "rocket raccoon"
+];
 
 var renderButtons = function() {
   $("#button-container").empty();
   for (i = 0; i < topics.length; i++) {
     var newButton = $("<button>");
     newButton.text(topics[i]);
-    newButton.addClass("animal-button btn btn-info");
+    newButton.addClass("animal-button btn btn-danger");
     newButton.attr("data-animal", topics[i]);
     $("#button-container").append(newButton);
   }
@@ -22,6 +28,7 @@ $(document).ready(function() {
         .trim()
     );
     renderButtons();
+    $("#input-animal").val("");
   });
   $(document).on("click", ".animal-button", function() {
     $("#gifs-appear-here").empty();

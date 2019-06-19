@@ -10,48 +10,58 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <link
+      href="https://fonts.googleapis.com/css?family=Anton&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <title>GifTastic!</title>
   </head>
   <body>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-8 offset-md-2">
-          <div id="button-container"></div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-8 offset-md-2">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Add your own!</h5>
-              <p class="card-text">
-                Add your own animal in the field below.
-              </p>
-              <form>
-                <div class="form-group">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="input-animal"
-                    placeholder="Your Animal Here"
-                  />
-                </div>
-                <button
-                  id="add-animal"
-                  type="submit"
-                  class="btn btn-primary mb-2"
-                >
-                  Add Animal
-                </button>
-              </form>
+        <div class="col-md-8 offset-md-2 main-content">
+          <div class="row">
+            <div class="col-md-12">
+              <div id="button-container"></div>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-8 offset-md-2">
-          <div id="gifs-appear-here"></div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Click a button to see a hero in action
+                  </h5>
+                  <p class="card-text">
+                    ...or add your own in the field below!
+                  </p>
+                  <form>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="input-animal"
+                        placeholder="Your Hero Here"
+                      />
+                    </div>
+                    <button
+                      id="add-animal"
+                      type="submit"
+                      class="btn btn-primary mb-2"
+                    >
+                      Add Hero
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div id="gifs-appear-here"></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
