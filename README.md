@@ -1,6 +1,6 @@
 # GifTastic
 
-Interface for searching and viewing superhero gifs pulled from the GIPHY API.
+Interface for searching and viewing superhero gifs pulled from the GIPHY API.  Deployed app can be accessed [here](https://andreain3d.github.io/GifTastic/).
 
 ## Technologies Used
 * HTML 5  
